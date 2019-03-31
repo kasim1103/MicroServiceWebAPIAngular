@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.API", "LeaveRequestAngular.API\LeaveRequestAngular.API.csproj", "{0BD31757-7301-4736-913D-6A8D2FC1D57B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.DataAccess", "LeaveRequestAngular.DataAccess\LeaveRequestAngular.DataAccess.csproj", "{0CF048AF-5455-4084-8957-C0732468382D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.Core", "LeaveRequestAngular.Core\LeaveRequestAngular.Core.csproj", "{6454A959-6C28-46E7-90CB-B42F3D42B735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.Common", "LeaveRequestAngular.Common\LeaveRequestAngular.Common.csproj", "{080016C3-E6F1-4762-BB86-661C21893E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.BusinessLogic", "LeaveRequestAngular.BusinessLogic\LeaveRequestAngular.BusinessLogic.csproj", "{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveRequestAngular.AClient", "LeaveRequestAngular.AClient\LeaveRequestAngular.AClient.csproj", "{42766ED5-1DAA-492B-98B7-13BDD1D11E21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BD31757-7301-4736-913D-6A8D2FC1D57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD31757-7301-4736-913D-6A8D2FC1D57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD31757-7301-4736-913D-6A8D2FC1D57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD31757-7301-4736-913D-6A8D2FC1D57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF048AF-5455-4084-8957-C0732468382D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF048AF-5455-4084-8957-C0732468382D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF048AF-5455-4084-8957-C0732468382D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF048AF-5455-4084-8957-C0732468382D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6454A959-6C28-46E7-90CB-B42F3D42B735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6454A959-6C28-46E7-90CB-B42F3D42B735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6454A959-6C28-46E7-90CB-B42F3D42B735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6454A959-6C28-46E7-90CB-B42F3D42B735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080016C3-E6F1-4762-BB86-661C21893E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080016C3-E6F1-4762-BB86-661C21893E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080016C3-E6F1-4762-BB86-661C21893E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080016C3-E6F1-4762-BB86-661C21893E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42766ED5-1DAA-492B-98B7-13BDD1D11E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42766ED5-1DAA-492B-98B7-13BDD1D11E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42766ED5-1DAA-492B-98B7-13BDD1D11E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42766ED5-1DAA-492B-98B7-13BDD1D11E21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

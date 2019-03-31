@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{005FFF50-7C1B-4797-9DD3-3A8D0EF05123}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeaveRequestAngular.BusinessLogic</RootNamespace>
+    <AssemblyName>LeaveRequestAngular.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IDistrictService.cs" />
+    <Compile Include="Service\IDivisionService.cs" />
+    <Compile Include="Service\IEmployeeService.cs" />
+    <Compile Include="Service\IHolidayService.cs" />
+    <Compile Include="Service\ILeaveService.cs" />
+    <Compile Include="Service\ILogService.cs" />
+    <Compile Include="Service\IPositionService.cs" />
+    <Compile Include="Service\IProvinceService.cs" />
+    <Compile Include="Service\IRegencyService.cs" />
+    <Compile Include="Service\IReligionService.cs" />
+    <Compile Include="Service\ITakeLeaveService.cs" />
+    <Compile Include="Service\IVillageService.cs" />
+    <Compile Include="Service\Master\DistrictService.cs" />
+    <Compile Include="Service\Master\DivisionService.cs" />
+    <Compile Include="Service\Master\EmployeeService.cs" />
+    <Compile Include="Service\Master\HolidayService.cs" />
+    <Compile Include="Service\Master\LeaveService.cs" />
+    <Compile Include="Service\Master\LogService.cs" />
+    <Compile Include="Service\Master\PositionService.cs" />
+    <Compile Include="Service\Master\ProvinceService.cs" />
+    <Compile Include="Service\Master\RegencyService.cs" />
+    <Compile Include="Service\Master\ReligionService.cs" />
+    <Compile Include="Service\Master\TakeLeaveService.cs" />
+    <Compile Include="Service\Master\VillageService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveRequestAngular.Common\LeaveRequestAngular.Common.csproj">
+      <Project>{080016c3-e6f1-4762-bb86-661c21893e79}</Project>
+      <Name>LeaveRequestAngular.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeaveRequestAngular.Core\LeaveRequestAngular.Core.csproj">
+      <Project>{6454a959-6c28-46e7-90cb-b42f3d42b735}</Project>
+      <Name>LeaveRequestAngular.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeaveRequestAngular.DataAccess\LeaveRequestAngular.DataAccess.csproj">
+      <Project>{0cf048af-5455-4084-8957-c0732468382d}</Project>
+      <Name>LeaveRequestAngular.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

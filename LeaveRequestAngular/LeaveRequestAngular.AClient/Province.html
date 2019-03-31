@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Provinces</title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/Province/ProvincesApp.js"></script>
+    <script src="Scripts/Province/ProvincesController.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="ProvincesApp">
+    <div id="nav-placeholder">
+
+    </div>
+    <div id="nav-leftside">
+
+    </div>
+    <div id="content" ng-view="MainController">
+
+    </div>
+</body>
+</html>
+<script>
+$(function(){
+    $("#nav-placeholder").load("Header.html");
+    $("#nav-leftside").load("LeftSideBar.html");
+});
+</script>
